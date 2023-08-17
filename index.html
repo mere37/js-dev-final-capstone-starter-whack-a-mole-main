@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+  <body>
+    <!--#### 1. Add a title to the game, surrounded by `h1` tags.-->
+    <h1 id="title"> Clean The Garden </h1>
+    <div>
+      <div>
+        <!--#### 3. Define a `start` button in `index.html`-->
+        <h2>Click <button id="start">start</button> to play!</h2>
+      </div>
+      <div>
+        <h2>score: <span id="score">0</span></h2>
+      </div>
+      <div>
+          <h2><span id="timer">0</span> seconds left.</h2>
+      </div>
+    </div>
+    <!--#### 2. Add nine holes and moles to the grid in `index.html`-->
+    <div class="grid">
+      <div id="hole0" class="hole">
+        <div id="mole0" class="mole"></div>
+      </div>
+      <div id="hole1" class="hole">
+        <div id="mole1" class="mole"></div>
+      </div>
+      <div id="hole2" class="hole">
+        <div id="mole2" class="mole"></div>
+      </div>
+      <div id="hole3" class="hole">
+        <div id="mole3" class="mole"></div>
+      </div>
+      <div id="hole4" class="hole">
+        <div id="mole4" class="mole"></div>
+      </div>
+      <div id="hole5" class="hole">
+        <div id="mole5" class="mole"></div>
+      </div>
+      <div id="hole6" class="hole">
+        <div id="mole6" class="mole"></div>
+      </div>
+      <div id="hole7" class="hole">
+        <div id="mole7" class="mole"></div>
+      </div>
+      <div id="hole8" class="hole">
+        <div id="mole8" class="mole"></div>
+      </div>
+      <!--9 total holes and moles added to the grid -->
+    </div>
+    <script src="./src/index.js"></script>
+    <audio autoplay id="audio">
+      <source src="/assets/sample-15s.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="moles-audio">
+      <source src="/assets/hit.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
